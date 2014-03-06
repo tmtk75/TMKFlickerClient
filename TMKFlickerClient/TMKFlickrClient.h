@@ -1,6 +1,6 @@
 //
-//  FlickrClient.h
-//  toody
+//  TMKFlickrClient.h
+//  TMKFlickrClient
 //
 //  Created by Tomotaka Sakuma on 2014/02/15.
 //  Copyright (c) 2014 tomotaka.sakuma. All rights reserved.
@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 
-@class RACSignal, FlickrPhoto;
+@class TMKFlickrPhoto;
 
 
-@interface FlickrClient : NSObject
+@interface TMKFlickrClient : NSObject
 
 @property (nonatomic, readonly) NSArray *photos;
 - (id)initWithKey:(NSString *)key secret:(NSString *)secret;

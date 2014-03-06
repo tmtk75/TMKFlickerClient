@@ -1,14 +1,14 @@
 //
-//  FlickrPhoto.m
-//  toody
+//  TMKFlickrPhoto.m
+//  TMKFlickrClient
 //
 //  Created by Tomotaka Sakuma on 2014/02/15.
 //  Copyright (c) 2014 tomotaka.sakuma. All rights reserved.
 //
 
-#import "FlickrPhoto.h"
+#import "TMKFlickrPhoto.h"
 
-@implementation FlickrPhoto
+@implementation TMKFlickrPhoto
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
              @"photoId": @"id",

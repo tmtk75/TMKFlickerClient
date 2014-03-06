@@ -1,6 +1,6 @@
 //
-//  FlickrPhoto.h
-//  toody
+//  TMKFlickrPhoto.h
+//  TMKFlickrClient
 //
 //  Created by Tomotaka Sakuma on 2014/02/15.
 //  Copyright (c) 2014 tomotaka.sakuma. All rights reserved.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Mantle.h>
 
-@interface FlickrPhoto : MTLModel<MTLJSONSerializing>
+@interface TMKFlickrPhoto : MTLModel<MTLJSONSerializing>
 @property (nonatomic, strong) NSString *photoId;   // "12533014324"
 @property (nonatomic, strong) NSString *owner;  // "90686080@N04"
 @property (nonatomic, strong) NSString *secret;  // "ba325369a5"

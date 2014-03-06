@@ -14,4 +14,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/tmtk75/TMKFlickerClient.git", :tag => "0.0.1" }
   s.source_files  = 'TMKFlickerClient', 'TMKFlickerClient/**/*.{h,m}'
   s.exclude_files = 'Classes/Exclude'
+
+  s.dependency = 'ReactiveCocoa'
+  s.dependency = 'Mantle'
+
 end

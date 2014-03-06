@@ -1,17 +1,17 @@
 //
-//  FlickrClient.m
-//  toody
+//  TMKFlickrClient.m
+//  TMKFlickrClient
 //
 //  Created by Tomotaka Sakuma on 2014/02/15.
 //  Copyright (c) 2014 tomotaka.sakuma. All rights reserved.
 //
 
-#import "FlickrClient.h"
-#import "FlickrPhoto.h"
+#import "TMKFlickrClient.h"
+#import "TMKFlickrPhoto.h"
 #import <ReactiveCocoa.h>
 #import <Mantle.h>
 
-@interface FlickrClient()
+@interface TMKFlickrClient()
 {
     NSString *_key;
     NSString *_secret;
@@ -20,7 +20,7 @@
 @property (nonatomic, strong) NSArray *photos;
 @end
 
-@implementation FlickrClient
+@implementation TMKFlickrClient
 
 + (instancetype)sharedInstance
 {
@@ -72,7 +72,7 @@
     [signal subscribeNext:^(NSDictionary *item) {
         RACSequence *photo = [item[@"photos"][@"photo"] rac_sequence];
         self.photos = [[photo map:^id(NSDictionary *v) {
-            return [MTLJSONAdapter modelOfClass:[FlickrPhoto class] fromJSONDictionary:v error:nil];
+            return [MTLJSONAdapter modelOfClass:[TMKFlickrPhoto class] fromJSONDictionary:v error:nil];
         }] array];
     }];
 }

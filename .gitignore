@@ -1,0 +1,16 @@
+UserInterfaceState.xcuserstate
+xcdebugger
+.DS_Store
+storia20130629/toody.xcdatamodeld/toody.xcdatamodel/
+toody.xcodeproj/project.xcworkspace/xcshareddata/
+.*.swp
+*.sqlite
+Documents
+
+# CocoaPods
+Pods
+toody.xcworkspace
+Podfile.lock
+TMKFlickerClient.xcodeproj/project.xcworkspace/
+TMKFlickerClient.xcworkspace/
+
