@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source_files  = 'TMKFlickerClient', 'TMKFlickerClient/**/*.{h,m}'
   s.exclude_files = 'Classes/Exclude'
 
-  s.dependency = 'ReactiveCocoa'
-  s.dependency = 'Mantle'
+  s.dependency 'ReactiveCocoa'
+  s.dependency 'Mantle'
 
 end
